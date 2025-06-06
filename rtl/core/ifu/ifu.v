@@ -10,6 +10,7 @@ module ifu(
         /* --------signals from bp --------------------*/
         input reg[`InstAddrBus]       next_pc_i,
         input reg                     next_branch_i,
+        input wire                    branch_redirect_i,
         input wire[`InstAddrBus]      branch_redirect_pc_i,
         /* ------- signals to inst_rom and decode unit --------*/
         output reg[`InstAddrBus]      pc_o,

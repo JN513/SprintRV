@@ -11,7 +11,7 @@ module if_id(
         input wire[`InstAddrBus]      pc_i,
         input wire[`InstAddrBus]      next_pc_i,
         input wire                    next_branch_i,
-        input wire                    branch_slot_end_i
+        input wire                    branch_slot_end_i,
         /* ------- signals from the inst_rom  --------*/
         input wire[`InstBus]          inst_i,
         /* ---------signals from exu -----------------*/
